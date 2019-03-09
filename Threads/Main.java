@@ -12,8 +12,8 @@ public class Main{
         for(int i = 0; i < arr.length; i++) {
             list.add(arr[i]);
         }
-        Thread thread2 = new Thread(new SortingThread2(list, list.size() / 2, list.size()));
-        Thread thread1 = new Thread(new SortingThread2(list, 0, list.size() / 2));
+        Thread thread2 = new Thread(new SortingThread(list, list.size() / 2, list.size()));
+        Thread thread1 = new Thread(new SortingThread(list, 0, list.size() / 2));
         thread1.start();
         thread2.start();
         

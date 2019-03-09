@@ -2,12 +2,12 @@ import java.util.List;
 import java.lang.Runnable;
 import java.lang.Exception;
 
-public class SortingThread2 implements Runnable {
+public class SortingThread implements Runnable {
     List<Integer> list;
     int begin;
     int end;
 
-    public SortingThread2(List<Integer> list, int begin, int end) {
+    public SortingThread(List<Integer> list, int begin, int end) {
         this.list = list;
         this.begin = begin;
         this.end = end;
